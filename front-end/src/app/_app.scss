@@ -1,0 +1,27 @@
+app-root {
+    
+    >.main {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        background-color: $gray-200;
+        padding-top: 10px;
+        color: white;
+        & .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            & > div {
+                padding: 10px;
+                width: 300px;
+            }
+        }
+    }
+}
+
+body {
+    margin: 0;
+    background-color: $gray-100;
+}

@@ -1,0 +1,16 @@
+app-toast {
+    position: fixed;
+    display: block;
+    right: 25px;
+    bottom: 20px; 
+    width: 150px;
+    text-align: center;
+    button {
+        background-color: white;
+        color: black;
+        &:hover {
+            background-color: $pink;
+        }
+
+    }
+}

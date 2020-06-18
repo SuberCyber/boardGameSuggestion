@@ -1,0 +1,40 @@
+<app-header> </app-header>
+
+<div class="main">
+    <input type="button" id="temp" value="Temp" (click)=temp()>
+    <input type="button" value="Sort By Weight" (click)="sortByWeight()">
+    <input type="button" value="Payable by 2" (click)="playableBy()">
+    <input type="button" value="Sort By Time" (click)="sortByTime()">
+    <!-- <input id="numPlayers" [formControl]="filter"> 
+    <input id="approxPlayTime" [formControl]="filter">  -->
+    What I want:
+    <ul>
+        <li> styling for difficulty </li>
+        <li> styling in general tbh </li>
+        <li> 3.find similar games mechanism</li>
+        <li> add sort alphabetically </li>
+        <li> add filter by category </li> 
+        <li> add filter by time </li>
+        <li> add filter by difficulty</li>
+        <li> create a way to apply multiple filters </li>
+        <li> create way to switch sort </li> 
+        <li> create toggle to switch sort direction </li>
+        <li> feedback link </li>
+        <li> how the heck to host this -> google domain + firebase </li> 
+        <li> mathsoc logo in header </li>
+        <li> 2. find out category types and be able to sort by them </li>
+        <li> 1. change font </li>
+        <li> modifications for mobile screens </li> 
+        <ul> 
+            <li> make header not sticky</li>
+        </ul>
+    </ul>
+    <div class="flex-container">
+        <div *ngFor="let game of gamesList">
+            <app-game-info [game]="game"> </app-game-info>
+            <!-- <input type="button" [value]="game.name" (click)=temp2(game)> -->
+        </div>
+
+    </div>
+</div>
+<app-toast> </app-toast>
